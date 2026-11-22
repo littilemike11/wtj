@@ -66,7 +66,7 @@ export default function Navbar() {
         <Link
           href="/"
           onClick={closeMenu}
-          className="text-2xl font-extrabold tracking-wide text-white"
+          className="text-2xl font-extrabold tracking-wide text-[#e8001a]"
         >
           WTJ
         </Link>
@@ -175,7 +175,7 @@ export default function Navbar() {
           onClick={() => setMobileOpen(true)}
           aria-label="Open navigation menu"
           aria-expanded={mobileOpen}
-          className="text-2xl text-white lg:hidden"
+          className="text-2xl cursor-pointer text-white lg:hidden"
         >
           <FaBars />
         </button>
@@ -192,7 +192,7 @@ export default function Navbar() {
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed right-0 top-0 z-50 flex h-dvh w-[300px] max-w-[85vw] flex-col bg-black transition-transform duration-300 lg:hidden ${
+        className={`fixed right-0 top-0 z-50 flex h-dvh w-[320px] max-w-[85vw] flex-col bg-black transition-transform duration-300 lg:hidden ${
           mobileOpen ? "translate-x-0" : "translate-x-full"
         }`}
         aria-label="Mobile navigation"
@@ -204,7 +204,7 @@ export default function Navbar() {
           <Link
             href="/"
             onClick={closeMenu}
-            className="text-2xl font-extrabold text-white"
+            className="text-2xl font-extrabold text-[#e8001a]"
           >
             WTJ
           </Link>
@@ -213,9 +213,9 @@ export default function Navbar() {
             type="button"
             onClick={closeMenu}
             aria-label="Close navigation menu"
-            className="text-2xl text-white transition-colors hover:text-[#d73d3d]"
+            className="text-2xl cursor-pointer text-white transition-colors hover:text-[#d73d3d]"
           >
-            <FaTimes />
+            <FaTimes aria-hidden />
           </button>
         </div>
 

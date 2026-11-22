@@ -1,20 +1,24 @@
 import Link from "next/link";
 import { FaPlay } from "react-icons/fa";
+import SearchBar from "./SearchBar";
 
 export default function Hero() {
   return (
     <section
-      className="relative flex min-h-[300px] h-[85vh] w-full items-center overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('/img/red-bckg.png')",
-      }}
+      className="relative flex min-h-[300px] h-[100vh] w-full items-center overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={
+        {
+          // backgroundImage: "url('/img/red-bckg.png')",
+        }
+      }
     >
       {/* Dark Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#160001] via-[rgba(41,4,4,0.75)] to-transparent" />
 
       {/* Hero Content */}
-      <div className="relative z-10 ml-[5%] mt-12 max-w-4xl animate-[fadeIn_2s_ease-in-out] text-white">
+      <div className="flex flex-col justify-end sm:justify-center h-[85vh] relative z-10 ml-[5%] mt-12  max-w-4xl animate-[fadeIn_2s_ease-in-out] text-white">
         {/* Tagline */}
+
         <p className="font-oswald text-base font-normal uppercase tracking-[0.2em] sm:text-xl md:text-2xl lg:text-[25px] lg:tracking-[0.5rem]">
           Culture
           <span className="px-2 font-black text-[#f30707]">X</span>
@@ -24,13 +28,16 @@ export default function Hero() {
         </p>
 
         {/* Main Heading */}
-        <h1 className="mt-5 font-montserrat text-5xl font-black uppercase leading-[1.05] sm:text-6xl md:text-7xl lg:text-[100px]">
+        <h1 className="my-5 sm:block font-montserrat text-5xl font-black uppercase leading-[1.05] sm:text-6xl md:text-7xl lg:text-[100px]">
           Real
           <br />
           Convos.
           <br />
           <span className="text-[#e8001a]">Good Vibes.</span>
         </h1>
+
+        {/* Search Bar */}
+        <SearchBar />
 
         {/* Watch The Show Link */}
         <div className="mt-8">

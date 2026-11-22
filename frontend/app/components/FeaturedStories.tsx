@@ -7,28 +7,28 @@ const featuredArticles = [
     id: 1,
     category: "Film",
     title: "The Evolution of Modern Cinema and Its Cultural Impact",
-    image: "/img/red-img.jpg",
+    image: "/images/red-img.jpg",
     href: "/articles/modern-cinema",
   },
   {
     id: 2,
     category: "Television",
     title: "Why Television Continues to Shape Pop Culture",
-    image: "/img/red-img.jpg",
+    image: "/images/red-img.jpg",
     href: "/articles/television-pop-culture",
   },
   {
     id: 3,
     category: "Entertainment",
     title: "The Conversations Everyone Is Having Right Now",
-    image: "/img/red-img.jpg",
+    image: "/images/red-img.jpg",
     href: "/articles/entertainment-trends",
   },
   {
     id: 4,
     category: "Music",
     title: "How Music Connects Communities and Generations",
-    image: "/img/red-img.jpg",
+    image: "/images/red-img.jpg",
     href: "/articles/music-culture",
   },
 ];
@@ -38,6 +38,7 @@ export default function FeaturedArticles() {
     <section className="w-full bg-white py-8">
       {/* Section Heading */}
       <div className="mx-auto flex w-[95%] items-center justify-between">
+        {/* border-b-2 border-[#e8001a] */}
         <h2 className="font-montserrat text-2xl font-extrabold uppercase text-black sm:text-3xl md:text-[40px]">
           Featured <span className="text-[#e8001a]">Stories</span>
         </h2>
