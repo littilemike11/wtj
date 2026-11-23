@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+import Article from "./Article";
 
 const featuredArticles = [
   {
@@ -55,37 +56,7 @@ export default function FeaturedArticles() {
       {/* Featured Article Cards */}
       <div className="mx-auto mt-3 grid w-[95%] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {featuredArticles.map((article) => (
-          <article
-            key={article.id}
-            className="group relative overflow-hidden rounded-md"
-          >
-            <Link
-              href={article.href}
-              className="relative block aspect-[4/3] w-full"
-            >
-              {/* Article Image */}
-              <Image
-                src={article.image}
-                alt={article.title}
-                fill
-                sizes="(max-width: 640px) 95vw, (max-width: 1024px) 47vw, 23vw"
-                className="object-cover brightness-[40%] transition-transform duration-500 group-hover:scale-105"
-              />
-
-              {/* Article Content */}
-              <div className="absolute inset-0 flex flex-col justify-end p-3 text-white">
-                {/* Category Label */}
-                <span className="mb-3 w-fit bg-[#f30707] px-3 py-2 font-oswald text-xs font-extrabold uppercase sm:text-sm">
-                  {article.category}
-                </span>
-
-                {/* Article Title */}
-                <h3 className="max-w-[95%] font-montserrat text-base font-extrabold leading-snug sm:text-lg">
-                  {article.title}
-                </h3>
-              </div>
-            </Link>
-          </article>
+          <Article key={article.id} article={article} />
         ))}
       </div>
     </section>
