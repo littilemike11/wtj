@@ -14,7 +14,7 @@ Minimum Node.js Verson 20.9
 
 2. go into frontend folder
 
-- `cd /frontend`
+- `cd /wtj/frontend`
 
 3. install node modules
 
