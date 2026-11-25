@@ -23,3 +23,5 @@ Minimum Node.js Verson 20.9
 4. start local development with live updates
 
 - `npm run dev`
+
+5. Open up localhost: typically http://localhost:3000/
