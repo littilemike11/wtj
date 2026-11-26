@@ -10,6 +10,7 @@ export default function AboutUs() {
   return (
     <>
       <div>
+        hi
         <Article article={articleExample} />
       </div>
     </>

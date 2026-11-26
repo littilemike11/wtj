@@ -31,7 +31,7 @@ const Article: React.FC<{ article: Article }> = ({ article }) => {
           {/* Article Content */}
           <div className="absolute inset-0 flex flex-col justify-end p-3 text-white">
             {/* Category Label */}
-            <span className="mb-3 w-fit bg-[#000] px-3 py-2 font-oswald text-xs font-extrabold uppercase sm:text-sm">
+            <span className="mb-3 w-fit bg-[#e8001a] px-3 py-2 font-oswald text-xs font-extrabold uppercase sm:text-sm">
               {article.category}
             </span>
 

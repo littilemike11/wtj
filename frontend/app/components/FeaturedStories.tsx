@@ -40,8 +40,10 @@ export default function FeaturedArticles() {
       {/* Section Heading */}
       <div className="mx-auto flex w-[95%] items-center justify-between">
         {/* border-b-2 border-[#e8001a] */}
-        <h2 className="font-montserrat text-2xl font-extrabold uppercase text-black sm:text-3xl md:text-[40px]">
+        <h2 className="font-montserrat relative text-2xl font-extrabold uppercase text-black sm:text-3xl md:text-[40px]">
           Featured <span className="text-[#e8001a]">Stories</span>
+          {/* Image Accent */}
+          <div className="absolute bottom-0 left-0 h-1 w-1/6 bg-[#e8001a]" />
         </h2>
 
         <Link

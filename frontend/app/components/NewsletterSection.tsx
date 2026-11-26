@@ -18,9 +18,17 @@ export default function NewsletterSignup() {
     setSubmitted(true);
     setEmail("");
   };
+  const COPY = {
+    Tagliner: "The weekly squeeze",
+    Headliner: "Stay in the Loop",
+    Header: "Get the Juice",
+    SubHeading: "In your inbox",
+    content:
+      "Get the latest conversations, entertainment news, exclusive interviews, and cultural stories delivered straight to your inbox. Don't miss a moment of what's happening.",
+  };
 
   return (
-    <section className="relative w-full overflow-hidden bg-black px-5 py-16 sm:py-20">
+    <section className="relative w-full h-[calc(100vh-4rem)] overflow-hidden bg-black px-5 py-16 sm:py-20">
       {/* Background Accent */}
       <div className="absolute -right-20 -top-24 h-72 w-72 rounded-full bg-[#e8001a]/10 blur-3xl" />
 
@@ -29,22 +37,20 @@ export default function NewsletterSignup() {
         <div className="mb-4 flex items-center gap-2">
           <FaEnvelope className="text-[#e8001a]" />
           <span className="font-oswald text-sm uppercase tracking-[4px] text-neutral-300">
-            Stay in the Loop
+            {COPY.Tagliner}
           </span>
         </div>
 
         {/* Heading */}
         <h2 className="font-montserrat text-3xl font-black uppercase leading-tight text-white sm:text-4xl md:text-5xl">
-          Get the Juice.
+          {COPY.Header}
           <br />
-          <span className="text-[#e8001a]">Stay in the Know.</span>
+          <span className="text-[#e8001a]">{COPY.SubHeading}</span>
         </h2>
 
         {/* Description */}
         <p className="mt-5 max-w-2xl font-roboto-condensed text-base leading-relaxed text-neutral-300 sm:text-lg">
-          Get the latest conversations, entertainment news, exclusive
-          interviews, and cultural stories delivered straight to your inbox.
-          Don't miss a moment of what's happening.
+          {COPY.content}
         </p>
 
         {/* Newsletter Form */}
@@ -77,10 +83,11 @@ export default function NewsletterSignup() {
             {/* Subscribe Button */}
             <button
               type="submit"
-              className="flex items-center justify-center gap-3 bg-[#e8001a] px-7 py-4 font-oswald text-base font-semibold uppercase tracking-wider text-white transition-colors duration-300 hover:bg-[#b90015]"
+              aria-label="subscribe to newsletter"
+              className="flex cursor-pointer items-center justify-center gap-3 bg-[#e8001a] px-7 py-4 font-oswald text-base font-semibold uppercase tracking-wider text-white transition-colors duration-300 hover:bg-[#b90015]"
             >
               Subscribe
-              <FaArrowRight />
+              <FaArrowRight aria-hidden={true} />
             </button>
           </form>
         )}

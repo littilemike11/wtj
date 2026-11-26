@@ -3,49 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  FaInstagram,
-  FaTiktok,
-  FaYoutube,
-  FaSearch,
-  FaBars,
-  FaTimes,
-  FaChevronDown,
-} from "react-icons/fa";
-
-const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "The Show", href: "/the-show" },
-  { name: "Newsletter", href: "/newsletter" },
-  { name: "About Us", href: "/about" },
-  { name: "Contact", href: "/contact" },
-];
-
-const coverageLinks = [
-  { name: "Film", href: "/coverage/film" },
-  { name: "Television", href: "/coverage/television" },
-  { name: "Entertainment", href: "/coverage/entertainment" },
-  { name: "Music", href: "/coverage/music" },
-  { name: "Exclusive Interviews", href: "/coverage/interviews" },
-];
-
-const socialLinks = [
-  {
-    name: "Instagram",
-    href: "https://instagram.com/",
-    icon: FaInstagram,
-  },
-  {
-    name: "TikTok",
-    href: "https://tiktok.com/",
-    icon: FaTiktok,
-  },
-  {
-    name: "YouTube",
-    href: "https://youtube.com/",
-    icon: FaYoutube,
-  },
-];
+import { navLinks, coverageLinks, socialLinks } from "../data/links";
+import { FaSearch, FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 
 export default function Navbar() {
   const pathname = usePathname();
