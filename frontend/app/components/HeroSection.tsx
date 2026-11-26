@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar";
 
 export default function Hero() {
   return (
-    <section className="relative border flex min-h-[300px] h-[calc(100vh-4rem)] w-full items-center overflow-hidden bg-cover bg-center bg-no-repeat">
+    <section className="relative flex min-h-[300px] h-[calc(100vh-4rem)] w-full items-center overflow-hidden bg-cover bg-center bg-no-repeat">
       <video
         autoPlay
         muted
@@ -50,7 +50,10 @@ export default function Hero() {
           >
             {/* Play Button */}
             <span className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-white transition-all duration-500 group-hover:border-[#e8001a] group-hover:bg-[#e8001a] sm:h-16 sm:w-16">
-              <FaPlay className="ml-1 text-xl text-white transition-transform duration-300 group-hover:scale-110" />
+              <FaPlay
+                aria-hidden={true}
+                className="ml-1 text-xl text-white transition-transform duration-300 group-hover:scale-110"
+              />
             </span>
 
             {/* Link Text */}
