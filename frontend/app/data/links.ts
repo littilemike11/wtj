@@ -29,7 +29,7 @@ export const socialLinks = [
   },
   {
     name: "YouTube",
-    href: "https://youtube.com/",
+    href: "https://www.youtube.com/@wheresthejuicetv",
     icon: FaYoutube,
   },
 ];

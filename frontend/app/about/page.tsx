@@ -1,17 +1,9 @@
-import Article from "../components/Article";
-const articleExample: Article = {
-  id: 1,
-  category: "Testing",
-  title: "test example",
-  image: "/images/red-img.jpg",
-  href: "/articles/modern-cinema",
-};
-export default function AboutUs() {
+import AboutUs from "../components/AboutUs";
+export default function About() {
   return (
     <>
       <div>
-        hi
-        <Article article={articleExample} />
+        <AboutUs />
       </div>
     </>
   );
